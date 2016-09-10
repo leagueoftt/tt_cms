@@ -1,0 +1,12 @@
+<%#if flash[:alert]  %>
+<%#flash[:alert] %>
+<%#end %>
+<form action="/sign_in" method="POST">
+    <div>
+        Eメールアドレス:<input type="text" name="email" placeholder="メールアドレスを入力">
+    </div>
+    <div>
+        パスワード:<input type="password" name="password" placeholder="パスワードを入力">
+    </div>
+    <input type="submit" value="ログイン">
+</form>

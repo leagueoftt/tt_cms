@@ -1,0 +1,46 @@
+
+<div class="col-md-1 float"></div>
+<span class="after col-md-4">
+  <div id="title"></div>
+  <div id="body"></div>
+</span>
+<div class="col-md-2 float">
+</div>
+<div class="col-md-1"></div>
+<form action="/articles/create" method="POST" class="col-md-4">
+ <div class="before">
+      <input type="text" name="title"  placeholder="記事のタイトル" class="title">
+    <div class="textarea">
+        <textarea  rows="10" cols="40"></textarea>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default dropdown-toggle"     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          色
+          <!-- <span class="caret"></span> -->
+        </button>
+        <ul class="dropdown-menu">
+          <button type="button" class="" id="red"> </button>
+          <button type="button" class="" id="blue"></button>
+          <button type="button" class="" id="green"></button>
+          <button type="button" class="" id="yellow"></button>
+          <button type="button" class="" id="purple"></button>
+          <button type="button" class="" id="orange"></button>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+    <input type="hidden" name="title-after"  value="" id="title-html">
+    <input type="hidden" name="body" value="" id="body-html" >
+
+  <input type="number" id="number" value="0">
+  <div class="submit">
+       <input type="submit" value="投稿">
+  </div>
+</form>
+<script type="text/javascript" src="../assets/js/new.js"></script>
+<script src="../assets/js/jquery.selection.js"></script>

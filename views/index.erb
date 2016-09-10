@@ -1,0 +1,16 @@
+<% unless session[:user] %>
+<div>
+    <div><a href="sign_in">ログイン</a></div><div><a href="sign_up">新規登録</a></div>
+</div>
+<% else %>
+<a href='/articles/new'><img src="/assets/images/header.png" alt=""></a>
+<% end %>
+<ul>
+  <% if session[:user]%>
+  <% @articles.each do |article| %>
+  <li>
+    <a href="/article/<%= article.id %>" class="link"><%= article.title %></a>
+  </li>
+  <% end %>
+  <% end %>
+</ul>
